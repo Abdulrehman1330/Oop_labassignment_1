@@ -24,12 +24,11 @@ public class Lab {
 
     public boolean removeComputer(String computerNumber){
         int i = 0;
-        for (Computer comp : computers){
+        for (Computer comp:computers){
             if (comp.getComputerNumber().equals(computerNumber)){
-                for (int j = i; j<currentComp;){
-                    computers[j++] = computers[j+1];
+                for (int j = i; j<currentComp;j++){
+                    computers[j] = computers[j+1];
                 computers[--currentComp] = null;
-                i++;
                 return true;
             }
         }

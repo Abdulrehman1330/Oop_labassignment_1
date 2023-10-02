@@ -65,6 +65,14 @@ public class Computer {
         return new Computer(comp.getComputerNumber(), comp.getLcdModel(), comp.getRamSize(), comp.getHddSize(), comp.isHasGPU());
     }
 
-
-
+    @Override
+    public String toString() {
+        return "Computer{" +
+                "computerNumber='" + computerNumber + '\'' +
+                ", lcdModel='" + lcdModel + '\'' +
+                ", ramSize=" + ramSize +
+                ", hddSize=" + hddSize +
+                ", hasGPU=" + hasGPU +
+                '}';
+    }
 }

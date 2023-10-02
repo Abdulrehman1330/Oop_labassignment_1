@@ -8,7 +8,8 @@ public class Main {
     u1.labs[0].addComputer(new Computer("14","kllGAG",12,20,true));
         System.out.println(u1.labs[0].computers[0]);
         System.out.println(u1.labs[0].computers[1]);
-        u1.labs[0].removeComputer("14");
-        System.out.println(u1.labs[0].computers[1]);
+        System.out.println(u1.labs[0].fetch("14"));
+        System.out.println(u1.labs[0].removeComputer("16"));
+        System.out.println(u1.labs[0].computers[0]);
     }
 }
